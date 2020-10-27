@@ -90,8 +90,18 @@ This often introduces too much abstraction, requires you to jump between differe
 ## Types 
 
 -**Usestate**
- 
+ ```
+ import React, { useState } from 'react';
+ function Example() {
+
+  const [name, setname] = useState('');
+ ```
 -**UseEffect**
+```
+ useEffect(() => {
+    document.title = `Your name  ${name} times`;
+  });
+```
  
 -**Custom Hooks**
 Building Your Own Hooks
