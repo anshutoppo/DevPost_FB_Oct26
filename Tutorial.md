@@ -77,15 +77,18 @@ The render() method is required, and is the method that actually outputs the HTM
 The componentDidMount() method is called after the component is rendered
 
 
-##What is a Hook? A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. 
+##What is a Hook? A Hook is a special function that lets you **hook into** React features. For example, useState is a Hook that lets you add React state to function components. 
 
 Components might perform some data fetching in componentDidMount and componentDidUpdate. However, the same componentDidMount method might also contain some unrelated logic that sets up event listeners, with clean-up performed in componentWillUnmount. 
+
+
 This often introduces too much abstraction, requires you to jump between different files, and makes reusing components more difficult.
 
-Hooks let you split one component into smaller functions based on what pieces are related (such as setting up a subscription or fetching data), rather than forcing a split based on lifecycle methods. 
+Hooks let you split one component into smaller functions based on what pieces are related , rather than forcing a split based on lifecycle methods. 
 
-When would I use a Hook? We use Hook for life cycle method.
-Types 
+**When would I use a Hook?** We use Hook for life cycle method.
+
+## Types 
 
 -**Usestate**
  
@@ -123,30 +126,46 @@ Source w3school
 
 In HTML, form data is usually handled by the DOM.
 In React, form data is usually handled by the components.
+
 When the data is handled by the components, all the data is stored in the component state.
 You can control changes by adding event handlers in the on Change attribute.
 
-Form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState().
+Form elements such as 
+**<input>**, **<textarea>**, and **<select>**
+ typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState().
 
-**Text Area Tag**
+**Text Area Tag** 
+```
+<textarea></textarea>
+```
  
 **Input Tag**
+```
+<input type="file" />
+```
+
  
 **Conditional Rendering**
 
 Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them
 If you do not want to display the h1 element until the user has done any input, you can add  if statement.
-```
-{ val ?? null ? 
+
+
+  ```
+  { val ?? null ? 
      <> <h4 id ="emoji">Smiley Detected :  </h4> <h1>{smiley}</h1> </>: <h4> Please Enter a Word </h4>}
-     ```
- Val?? Null is check for null value ES2020 introduced the nullish coalescing operator denoted by the double question marks (??)
+  ```
+     
+**Val?? Null**   is check for null value ES2020 introduced the nullish coalescing operator denoted by the double question marks **(??)**
 On condition true it will return a statement and on being False it return other statement.
+
 **Inline If with Logical && Operator**
 You may embed expressions in JSX by wrapping them in curly brace
 
 **Inline If-Else with Conditional Operator**
+```
 condition? true: false.
+```
 The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as a shortcut for the if statement.
 
 Entry point to Application is APP.js 
