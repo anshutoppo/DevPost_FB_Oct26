@@ -1,9 +1,9 @@
 
-#Word to Smiley Convertor
+# Word to Smiley Convertor
 
 ![Image of App]
 
-##What Does Application Does ?
+## What Does Application Does ?
 
 I have designed an App that takes word and returns the smiley pertaining to word on Click of Button using React Hooks for State management and Form Created using React Form .
 
@@ -11,7 +11,7 @@ I have designed an App that takes word and returns the smiley pertaining to word
  
 
 
-##Prerequisites knowledge 
+## Prerequisites knowledge 
 
 A)-HTML, CSS, and JavaScript (Fundamentals to get started)
 Some Materials you can look - W3SCHOOLS, FREECODECAMP 
@@ -49,7 +49,7 @@ D) Code Editors
 
 
 
-##Steps To create React JS Project
+## Steps To create React JS Project
 ```
  1) Install npm and Node
  2) npx create-react-app my-app
@@ -58,7 +58,7 @@ cd my-app
 npm start
 ```
 
-##React Life Cycle 
+## React Life Cycle 
 React has a lifecycle which you can monitor and manipulate during its three main phases.
 
 The three phases are: **Mounting, Updating, and Unmounting**
@@ -98,7 +98,7 @@ Custom Hook is a JavaScript function whose name starts with”use” and that ma
 
 
 
-##Forms in React 
+## Forms in React 
 
 Just like in HTML, React uses forms to allow users to interact with the web page.
 Snippet:
