@@ -77,14 +77,13 @@ The render() method is required, and is the method that actually outputs the HTM
 The componentDidMount() method is called after the component is rendered
 
 
-##What is a Hook? A Hook is a special function that lets you **hook into** React features. For example, useState is a Hook that lets you add React state to function components. 
+## What is a Hook? A Hook is a special function that lets you **hook into** React features. For example, useState is a Hook that lets you add React state to function components. 
 
 Components might perform some data fetching in componentDidMount and componentDidUpdate. However, the same componentDidMount method might also contain some unrelated logic that sets up event listeners, with clean-up performed in componentWillUnmount. 
 
 
 This often introduces too much abstraction, requires you to jump between different files, and makes reusing components more difficult.
-
-Hooks let you split one component into smaller functions based on what pieces are related , rather than forcing a split based on lifecycle methods. 
+ 
 
 **When would I use a Hook?** We use Hook for life cycle method.
 
@@ -120,6 +119,7 @@ class MyForm extends React.Component {
   }
 }
 ReactDOM.render(<MyForm />, document.getElementById('root'));
+
 ```
 Source w3school
 
@@ -130,8 +130,7 @@ In React, form data is usually handled by the components.
 When the data is handled by the components, all the data is stored in the component state.
 You can control changes by adding event handlers in the on Change attribute.
 
-Form elements such as 
-**<input>**, **<textarea>**, and **<select>**
+Form elements such as **input,textarea, and select **
  typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState().
 
 **Text Area Tag** 
